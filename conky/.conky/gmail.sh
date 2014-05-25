@@ -1,7 +1,7 @@
 #!/bin/bash
 
 GUSERNAME="your_gmail_username"
-GPASS="your_password"
+GPASS="your_gmail_pass"
 
 GOOGLE_ATOM="$(wget --secure-protocol=TLSv1 --timeout=3 -t 1 -q -O - \
 https://${GUSERNAME}:${GPASS}@mail.google.com/mail/feed/atom \
