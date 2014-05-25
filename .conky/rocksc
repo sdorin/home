@@ -1,0 +1,2 @@
+#!/bin/sh
+wget --quiet rockfm.ro -O -|grep -A21 "Ultimele 10"|grep -A20 "class=\"first\""|sed "s/<\/\?li.*\|<span.*//"|sed "s/\&#039;/'/"|grep -v "^ *$"|sed "s/^ *//"
